@@ -644,4 +644,28 @@
             <description>As an action you launch an explosive round from the gun. The round detonates in a 30-foot radius sphere at a point within range. Each creature in that area must make a Dexterity saving throw against your spell save DC. On a failed throw the target takes 4d8 fire damage.</description>
         </sheet>
     </element>
+	<element name="Thunder Cannon" type="Weapon" source="Unearthed Arcana" id="ID_WOTC_UA_ITEM_GUNSMITH_THUNDER_CANNON">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+            <p>A ferocious weapon that fires leaden bullets that can punch through armor with ease.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/500</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+		</setters>
+	</element>
+	<element name="Thunder Cannon Ammo" type="Item" source="Unearthed Arcana" id="ID_WOTC_UA_ITEM_THUNDER_CANNON_AMMO">
+		<description>
+			<p>Ammunition produced from the Arcane Magazine.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 </elements>
